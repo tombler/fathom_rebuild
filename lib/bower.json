@@ -1,0 +1,20 @@
+{
+  "name": "angularTemplate",
+  "version": "0.0.0",
+  "homepage": "",
+  "authors": [
+    "TGriffey <tgriffey9389@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "bootstrap": "*",
+    "angular": "*",
+    "angular-route": "*"
+  }
+}
