@@ -1,4 +1,4 @@
-var fathom = angular.module("fathom", ['ngRoute', 'ui.bootstrap']);
+var fathom = angular.module("fathom", ['ngRoute']);
 
 fathom.directive('scrollOnClick', function() {
   return {
