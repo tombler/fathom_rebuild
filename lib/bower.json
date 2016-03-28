@@ -15,6 +15,9 @@
     "jquery": "*",
     "bootstrap": "*",
     "angular": "*",
-    "angular-route": "*"
+    "angular-route": "*",
+    "jquery.typist": "~0.0.7",
+    "fullpage.js": "~2.7.8",
+    "angular-bootstrap": "~1.2.5"
   }
 }

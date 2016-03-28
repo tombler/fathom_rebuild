@@ -1,70 +1,61 @@
-var fathom = angular.module("fathom", ['ngRoute']);
+var fathom = angular.module("fathom", ['ngRoute', 'ui.bootstrap']);
 
-// app
+fathom.directive('scrollOnClick', function() {
+  return {
+    restrict: 'A',
+    link: function(scope, $elm, attrs) {
+      var idToScroll = attrs.href;
+      $elm.on('click', function() {
+        var $target;
+        if (idToScroll) {
+          $target = $(idToScroll);
+        } else {
+          $target = $elm;
+        }
+        $("body").animate({scrollTop: $target.offset().top}, "slow");
+      });
+    }
+  }
+});
 
-// .factory("storage", function () {
-//     var bucket = {};
-//     var context = new AudioContext();
-//     var masterGain = context.createGain();
-
-//     return {
-//         context: context,
-//         gain: masterGain,
-//         getJunk: function (junk) {
-//             if (bucket.hasOwnProperty(junk)) {
-//                 return bucket[junk];
-//             }
-//         },
-//         addJunk: function (key, value) {
-//             bucket[key] = value;
-//         }
-//     };
-// })
-
-// .directive('instructionsPopover', function () {
-
-//     return {
-//         restrict: 'A',
-//         link: function (scope, el, attrs) {
-//             // scope.label = attrs.popoverLabel;
-//             $(el).popover({
-//                 trigger: 'hover',
-//                 html: true,
-//                 content: attrs.popoverHtml,
-//                 placement: attrs.popoverPlacement
-//             });
-//         }
-//     };
-// })
+fathom.directive('customPopover', function () {
+    return {
+        restrict: 'A',
+        template: '<span>{{label}}</span>',
+        link: function (scope, el, attrs) {
+            scope.label = attrs.popoverLabel;
+            $(el).popover({
+                trigger: 'click',
+                html: true,
+                content: attrs.popoverHtml,
+                placement: attrs.popoverPlacement
+            });
+        }
+    };
+});
 
 fathom.config(['$routeProvider', function ($routeProvider) {
-    // $routeProvider.
-    //     when('/home', {
-    //         templateUrl: './app/templates/home.html',
-    //         controller: 'HomeCtrl'
-    //     }).
-    //     when('/keyboard', {
-    //         templateUrl: './app/templates/keyboard.html',
-    //         controller: 'KeyboardCtrl'
+    $routeProvider.
+        when('/fathomyourreality', {
+            templateUrl: '/views/typist.html',
+            controller: 'TypistCtrl'
+        }).
+        when('/home', {
+            templateUrl: '/views/home.html',
+            controller: 'HomeCtrl'
             
-    //     }).
-    //     when('/custom', {
-    //         templateUrl: './app/templates/customSound.html',
-    //         controller: 'CustomSoundCtrl'
+        }).
+        when('/signup', {
+            templateUrl: '/views/signup.html',
+            controller: 'SignupCtrl'
             
-    //     }).
-    //     when('/dj', {
-    //         templateUrl: './app/templates/dj.html',
-    //         controller: 'DjCtrl'
+        }).
+        when('/team', {
+            templateUrl: '/views/team.html',
+            controller: 'TeamCtrl'
             
-    //     }).
-    //     when('/testupload', {
-    //         templateUrl: './app/templates/testUpload.html',
-    //         controller: 'UploadCtrl'
-            
-    //     }).
-    //     otherwise({
-    //         redirectTo: '/home'
-    //     });
+        }).
+        otherwise({
+            redirectTo: '/home'
+        });
 }]);
-
