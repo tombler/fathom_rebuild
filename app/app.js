@@ -1,4 +1,4 @@
-var fathom = angular.module("fathom", ['ngRoute']);
+var fathom = angular.module("fathom", ['ngRoute', 'ngAnimate']);
 
 fathom.directive('scrollOnClick', function() {
   return {
