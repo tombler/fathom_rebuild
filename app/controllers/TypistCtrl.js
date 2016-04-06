@@ -1,4 +1,4 @@
-fathom.controller('TypistCtrl', function ($scope) {
+fathom.controller('TypistCtrl', function ($scope, $location) {
 
     $scope.init = function () {
         $(function() {
@@ -15,5 +15,6 @@ fathom.controller('TypistCtrl', function ($scope) {
                 $('.ghost-btn-fill').hide().delay(15000).fadeIn('slow');    
         });   
     };
+
 
 });

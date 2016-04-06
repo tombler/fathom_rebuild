@@ -36,7 +36,7 @@ fathom.directive('customPopover', function () {
 
 fathom.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.
-        when('/fathomyourreality', {
+        when('/', {
             templateUrl: '/views/typist.html',
             controller: 'TypistCtrl'
         }).

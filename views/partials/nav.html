@@ -1,5 +1,5 @@
 <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+  <nav ng-class="{'navbar-fixed-top': pixelsScrolled > 500}" class="navbar navbar-default topnav" role="navigation" id="navbar-main">
       <div class="container topnav">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -9,15 +9,15 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand topnav" href="#">Fathom
-                <!-- <img alt="Fathom" src="img/fathom-your-reality-seed-grey-01.svg"> -->
+              <a class="navbar-brand topnav" href="#">
+                <img alt="Fathom" src="img/fathom-logo-313px-white-01.svg" width="100px">
               </a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                   <li>
-                      <a href="#about">Contact Us</a>
+                      <a href="#/signup/">CONTACT US</a>
                   </li>
               </ul>
           </div>
