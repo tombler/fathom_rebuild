@@ -16,7 +16,9 @@
     "load-grunt-tasks": "*",
     "main-bower-files": "*",
     "matchdep": "*",
-    "q": "*"
+    "q": "*",
+    "grunt-cli": "^1.2.0",
+    "matchdep": "^1.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

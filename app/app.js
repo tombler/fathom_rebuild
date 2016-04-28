@@ -36,11 +36,11 @@ fathom.directive('customPopover', function () {
 
 fathom.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.
+        // when('/', {
+        //     templateUrl: '/views/typist.html',
+        //     controller: 'TypistCtrl'
+        // }).
         when('/', {
-            templateUrl: '/views/typist.html',
-            controller: 'TypistCtrl'
-        }).
-        when('/home', {
             templateUrl: '/views/home.html',
             controller: 'HomeCtrl'
             
@@ -56,6 +56,6 @@ fathom.config(['$routeProvider', function ($routeProvider) {
             
         }).
         otherwise({
-            redirectTo: '/home'
+            redirectTo: '/'
         });
 }]);
