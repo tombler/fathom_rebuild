@@ -1,29 +1,5 @@
 fathom.controller('HomeCtrl', function ($scope, $anchorScroll, $location, $window, $document) {
 
-  
-     $(function() {
-        
-        $scope.topOfNav = $('#navbar-main').offset().top;
-        $scope.projectsTop = $('.content-section-a').offset().top;
-
-     })
-
-    $scope.scroll = function(el) {
-      var navHeight = $('#navbar-main').height();
-      var padding = 20;
-
-      $('body').animate({ scrollTop: $scope.projectsTop - (navHeight)});
-    };
-
-    $document.on('scroll', function() {
-      // do your things like logging the Y-axis
-      // console.log($window.scrollY);
-      // or pass this to the scope
-      $scope.$apply(function() {
-          $scope.pixelsScrolled = $window.scrollY;
-      });
-    });
-
 
     $scope.projects = [
       {

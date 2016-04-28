@@ -117,3 +117,40 @@
 #typist {
     margin: 0 auto;
 }
+
+
+footer {
+  padding: 20px 0;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    height: 10px;
+    background-color: black;
+    opacity: 0;
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition:  all 1000ms ease;
+    transition: all 1000ms ease;
+
+    .link:hover {
+      background: black;
+      padding-bottom: 0px;
+    }
+
+}
+
+
+.min{
+   opacity: 1;
+   height: 50px;
+  -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition:  all 1000ms ease;
+    transition: all 1000ms ease;
+}
+
