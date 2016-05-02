@@ -9,6 +9,10 @@
         font-size:14px; 
         font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 
+        .mc-field-group {
+          width: 100%;
+        }
+
         form input {
             background: black;            
             outline: none;
@@ -43,6 +47,11 @@
         /* active state */
         input:focus ~ .bar:before, input:focus ~ .bar:after {
           width:50%;
+        }
+
+
+        #mc-embedded-subscribe {
+          margin: 1em auto;
         }
 
     }

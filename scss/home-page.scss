@@ -46,18 +46,18 @@
 }
 
 .bg {
-  animation: pulse 5s;
+  // animation: pulse 5s;
   background: url("../img/fathom-background.png");
 }
 
-@keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+// @keyframes pulse {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
 // #typist {
 //     margin: 0 auto;
@@ -89,6 +89,16 @@
   padding-right: 20%;
 }
 
+.carousel-indicators {
+    bottom: -20px;
+  }
+
+
+@media screen and (min-width: 768px) {
+  .carousel-indicators {
+    bottom: -20px;
+  }
+}
 
 
 

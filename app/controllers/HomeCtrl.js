@@ -1,24 +1,7 @@
-fathom.controller('HomeCtrl', function ($scope, $anchorScroll, $location, $window, $document, projects) {
+fathom.controller('HomeCtrl', function ($scope, $anchorScroll, $location, $document, projects, anchorSmoothScroll) {
 
 
     $scope.projects = projects.projects;
-    
-
-    // $scope.showProject = function (project)
-    // {
-    //   if (project.show)
-    //   { 
-    //     project.show = false;
-    //     return;
-    //   }
-
-    //   for (var i = $scope.projects.length - 1; i >= 0; i--) {
-    //     $scope.projects[i].show = false;
-    //   };
-
-    //   project.show = true;
-    
-    // }
 
 
     $scope.myInterval = 3000;
@@ -42,47 +25,16 @@ fathom.controller('HomeCtrl', function ($scope, $anchorScroll, $location, $windo
 
     $scope.addSlides();
 
-    // for (var i = 0; i < 4; i++) {
-    //   $scope.addSlide();
-    // }
 
-    // $scope.randomize = function() {
-    //   var indexes = generateIndexesArray();
-    //   assignNewIndexesToSlides(indexes);
-    // };
-
-    
-    // Randomize logic below
-
-    // function assignNewIndexesToSlides(indexes) {
-    //   for (var i = 0, l = slides.length; i < l; i++) {
-    //     slides[i].id = indexes.pop();
-    //   }
-    // }
-
-    // function generateIndexesArray() {
-    //   var indexes = [];
-    //   for (var i = 0; i < currIndex; ++i) {
-    //     indexes[i] = i;
-    //   }
-    //   return shuffle(indexes);
-    // }
-
-    // http://stackoverflow.com/questions/962802#962890
-    // function shuffle(array) {
-    //   var tmp, current, top = array.length;
-
-    //   if (top) {
-    //     while (--top) {
-    //       current = Math.floor(Math.random() * (top + 1));
-    //       tmp = array[current];
-    //       array[current] = array[top];
-    //       array[top] = tmp;
-    //     }
-    //   }
-
-    //   return array;
-    // }
+    $scope.gotoElement = function (eID){
+      // set the location.hash to the id of
+      // the element you wish to scroll to.
+      $location.hash('bottom');
+ 
+      // call $anchorScroll()
+      anchorSmoothScroll.scrollTo(eID);
+      
+    };
 
 
 });

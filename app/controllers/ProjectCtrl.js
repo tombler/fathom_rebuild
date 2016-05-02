@@ -8,9 +8,5 @@ fathom.controller('ProjectCtrl', function ($scope, $routeParams, projects) {
     }
   };
 
-  
-  
-
-
 
 });

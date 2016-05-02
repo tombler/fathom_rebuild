@@ -278,14 +278,8 @@ footer {
   font-family: 'PT Mono', 'Open Sans'; }
 
 .bg {
-  animation: pulse 5s;
   background: url("../img/fathom-background.png"); }
 
-@keyframes pulse {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 .nav > li > a {
   padding-bottom: 0px;
   padding-left: 0px;
@@ -307,6 +301,12 @@ footer {
   padding-left: 20%;
   padding-right: 20%; }
 
+.carousel-indicators {
+  bottom: -20px; }
+
+@media screen and (min-width: 768px) {
+  .carousel-indicators {
+    bottom: -20px; } }
 .content-section-signup {
   padding-top: 5%; }
   .content-section-signup #mc_embed_signup {
@@ -316,6 +316,8 @@ footer {
     font-size: 14px;
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     /* active state */ }
+    .content-section-signup #mc_embed_signup .mc-field-group {
+      width: 100%; }
     .content-section-signup #mc_embed_signup form input {
       background: black;
       outline: none;
@@ -341,5 +343,7 @@ footer {
       right: 50%; }
     .content-section-signup #mc_embed_signup input:focus ~ .bar:before, .content-section-signup #mc_embed_signup input:focus ~ .bar:after {
       width: 50%; }
+    .content-section-signup #mc_embed_signup #mc-embedded-subscribe {
+      margin: 1em auto; }
 
 /*# sourceMappingURL=main.css.map */
