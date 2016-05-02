@@ -154,6 +154,11 @@ footer {
 p.copyright {
   margin: 15px 0 0; }
 
+a {
+  text-decoration: none !important; }
+  a:hover {
+    text-decoration: none !important; }
+
 /*CUSTOM*/
 /*button*/
 .ghost-btn-fill {
@@ -261,9 +266,27 @@ header {
   -moz-transition: all 1000ms ease;
   -o-transition: all 1000ms ease;
   transition: all 1000ms ease; }
-  header .link:hover {
-    background: black;
-    padding-bottom: 0px; }
+
+.nav > li > a {
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: black;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.carousel-inner {
+  overflow-x: visible;
+  overflow-y: visible;
+  min-height: 300px; }
+
+.carousel-caption {
+  position: static;
+  padding-left: 20%;
+  padding-right: 20%; }
 
 .min {
   opacity: 1;
