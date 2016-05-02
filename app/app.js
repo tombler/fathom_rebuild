@@ -26,7 +26,7 @@ fathom.directive("myNavscroll", function($window) {
                 scope.scrollPosition = 0
             }
 
-            if (this.pageYOffset > scope.scrollPosition) {
+            if (this.pageYOffset > 50) {
                 scope.boolChangeClass = true;
             } else {
                 scope.boolChangeClass = false;
