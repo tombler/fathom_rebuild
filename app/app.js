@@ -1,4 +1,4 @@
-var fathom = angular.module("fathom", ['ngRoute', 'ngAnimate']);
+var fathom = angular.module("fathom", ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
 
 fathom.directive('scrollOnClick', function() {
   return {
@@ -38,34 +38,30 @@ fathom.directive("myNavscroll", function($window) {
 });
 
 
-fathom.directive('customPopover', function () {
-    return {
-        restrict: 'A',
-        template: '<span>{{label}}</span>',
-        link: function (scope, el, attrs) {
-            scope.label = attrs.popoverLabel;
-            $(el).popover({
-                trigger: 'click',
-                html: true,
-                content: attrs.popoverHtml,
-                placement: attrs.popoverPlacement
-            });
-        }
-    };
-});
+// fathom.directive('customPopover', function () {
+//     return {
+//         restrict: 'A',
+//         template: '<span>{{label}}</span>',
+//         link: function (scope, el, attrs) {
+//             scope.label = attrs.popoverLabel;
+//             $(el).popover({
+//                 trigger: 'click',
+//                 html: true,
+//                 content: attrs.popoverHtml,
+//                 placement: attrs.popoverPlacement
+//             });
+//         }
+//     };
+// });
 
 fathom.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.
-        // when('/', {
-        //     templateUrl: '/views/typist.html',
-        //     controller: 'TypistCtrl'
-        // }).
         when('/', {
             templateUrl: '/views/home.html',
             controller: 'HomeCtrl'
             
         }).
-        when('/signup', {
+        when('/contact', {
             templateUrl: '/views/signup.html',
             controller: 'SignupCtrl'
             
@@ -73,6 +69,11 @@ fathom.config(['$routeProvider', function ($routeProvider) {
         when('/team', {
             templateUrl: '/views/team.html',
             controller: 'TeamCtrl'
+            
+        }).
+        when('/projects/:projectSlug', {
+            templateUrl: '/views/project.html',
+            controller: 'ProjectCtrl'
             
         }).
         otherwise({
