@@ -6,6 +6,7 @@ fathom.factory('projects', function () {
           {
             title: "Change Agents",
             description: "A 'Gamesplainer' workshop on creative problem-solving for social change, offered for middle, high school and college students as well as school faculty.",
+            longDescrip: "Change Agents is a Fathom project empowering young people with tools for social change. It offers a 6-course curriculum that challenges students to explore topics like social justice, entrepreneurship and community sustainability, while developing their own personalized blueprints to pursue their passions, make positive impacts in their communities and launch social ventures to support their ideas. Young people have the power to change the world, if only they have the tools they need to thrive. Fathom’s Change Agents is working to plant the seed of entrepreneurial problem-solving for social change.",
             imgSrc: "img/changeagentslargeblack.png",
             slug: "change-agents"
           },
@@ -24,12 +25,14 @@ fathom.factory('projects', function () {
           {
             title: "Fathom Academy",
             description: "Our initiative to support local businesses, organizations and associations through collaborative efforts between the youth and community stakeholders.",
+            longDescrip: "We believe to invest in the youth is to invest in the future. And Fathom is placing its stake in the academic communities where young people are. Susan Davis said, “Work is not only a means of survival and meeting basic livelihood requirements. It is also a means of self-expression, self-actualization and vehicle for engaging in ones community. Fathom is bringing its project-based platform to campuses to empower students with the skills and competencies needed to turn their passions into professions and thrive in a 21st century economy.",
             imgSrc: "img/communitypartnerslarge.png",
             slug: "fathom-academy"
           },
           {
             title: "The Pillars",
             description: "Workshop and event series focused on the four elements of Hip Hop: MC-ing, Breakdancing, Graffiti and DJ-ing.",
+            longDescrip: "Creation is the purest form of self-expression and the manifestation of our legacy on this earth. Fathom’s The Pillars highlights the talents of Hip Hop community. The Pillars empowers young people within the Hip Hop community to preserve, protect and sustain Hip Hop culture, artisty and lifestyle via the Four Pillars of Hip Hop: Mc/Oral, DJ, Breakdancing and Graffiti/Visual art,",
             imgSrc: "img/thepillarslarge.png",
             slug: "the-pillars"
           }
