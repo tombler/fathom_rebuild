@@ -32,7 +32,7 @@ fathom.factory('projects', function () {
           {
             title: "The Pillars",
             description: "Workshop and event series focused on the four elements of Hip Hop: MC-ing, Breakdancing, Graffiti and DJ-ing.",
-            longDescrip: "Creation is the purest form of self-expression and the manifestation of our legacy on this earth. Fathom’s The Pillars highlights the talents of Hip Hop community. The Pillars empowers young people within the Hip Hop community to preserve, protect and sustain Hip Hop culture, artisty and lifestyle via the Four Pillars of Hip Hop: Mc/Oral, DJ, Breakdancing and Graffiti/Visual art,",
+            longDescrip: "Creation is the purest form of self-expression and the manifestation of our legacy on this earth. Fathom’s The Pillars highlights the talents of Hip Hop community. The Pillars empowers young people within the Hip Hop community to preserve, protect and sustain Hip Hop culture, artisty and lifestyle via the Four Pillars of Hip Hop: Mc/Oral, DJ, Breakdancing and Graffiti/Visual art.",
             imgSrc: "img/thepillarslarge.png",
             slug: "the-pillars"
           }
