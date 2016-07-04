@@ -95,29 +95,53 @@ fathom.service('anchorSmoothScroll', function(){
     
 });
 
-fathom.config(['$routeProvider', function ($routeProvider) {
+fathom.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
         when('/', {
-            templateUrl: '/views/home.html',
+            templateUrl: myLocalized.views + '/home.php',
             controller: 'HomeCtrl'
             
         }).
         when('/contact', {
-            templateUrl: '/views/signup.html',
+            templateUrl: myLocalized.views + '/signup.html',
             controller: 'SignupCtrl'
             
         }).
         when('/team', {
-            templateUrl: '/views/team.html',
+            templateUrl: myLocalized.views + '/team.html',
             controller: 'TeamCtrl'
             
         }).
-        when('/projects/:projectSlug', {
-            templateUrl: '/views/project.html',
+        when('/projects', {
+            templateUrl: myLocalized.views + '/all-projects.html',
             controller: 'ProjectCtrl'
+            
+        }).
+        when('/projects/:projectSlug', {
+            templateUrl: myLocalized.views + '/project.html',
+            controller: 'ProjectCtrl'
+            
+        }).
+        when('/change-agents/summer-cohort/:formType', {
+            templateUrl: myLocalized.views + '/ca-summer.html',
+            controller: 'ProjectCtrl'
+            
+        }).
+        when('/terms', {
+            templateUrl: myLocalized.views + '/terms.html',
+            controller: 'TermsCtrl'
+            
+        }).
+        when('/privacy', {
+            templateUrl: myLocalized.views + '/privacy.html',
+            controller: 'TermsCtrl'
             
         }).
         otherwise({
             redirectTo: '/'
         });
+
+
+        $locationProvider.html5Mode(true);
 }]);
+

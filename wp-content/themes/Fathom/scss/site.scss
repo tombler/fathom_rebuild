@@ -1,14 +1,20 @@
-.navbar-toggle {
-  background-color: #fff;
+@media (max-width: 767px) {
+  .navbar-toggle {
+    background-color: #fff;
 
-  .icon-bar {
-    background-color: #000;    
+    .icon-bar {
+      background-color: #000;    
+    }
+  }
+
+  .navbar-collapse {
+    background-color: #000;
   }
 }
 
-.navbar-collapse {
-  background-color: #000;
-}
+
+
+
 
 a {
     text-decoration: none !important;
@@ -104,8 +110,15 @@ header {
 footer {
   padding: 20px 0;
   border-top: 1px solid white;
+  background: rgba(255, 255, 255, 0.9);
+
+  p {
+    display: inline-block;
+    padding: 0px 2%;
+  }
 
   .copyright {
-    color: white;
+    color: #000;
   }
 }
+
