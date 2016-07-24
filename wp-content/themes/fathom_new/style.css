@@ -1,0 +1,57 @@
+/*
+Theme Name: Hellodart
+
+*/
+/*
+ * media query sizes based on bootstrap
+ * CSS:
+ * @media screen and (max-width: $screen-sm-max) {
+ *    display: none;
+ * }
+ * 
+ */
+/**
+ * colors
+ * 
+ */
+/**
+ * size variables
+ */
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block; }
+
+@media (max-width: 767px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: none; } }
+nav {
+  background-color: black;
+  opacity: 0;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease; }
+
+.fadeIn {
+  opacity: 1;
+  border-bottom: 1px solid white;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease; }
+
+.bg-1 {
+  background: url("img/connected_compressed_crop.jpg") no-repeat fixed;
+  color: #fff;
+  background-size: cover; }
+
+.bg-2 {
+  background: url("img/site_footergradient_compressed.jpg") no-repeat center top fixed;
+  color: #fff;
+  background-size: cover; }
+
+.bg-3 {
+  background: url("img/connected.jpg") no-repeat bottom center fixed;
+  color: #fff;
+  background-size: cover; }
+
+/*# sourceMappingURL=style.css.map */

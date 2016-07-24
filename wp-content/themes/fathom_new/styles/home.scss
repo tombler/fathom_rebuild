@@ -1,0 +1,18 @@
+// Parallax backgrounds
+.bg-1 {
+    background: url('img/connected_compressed_crop.jpg') no-repeat fixed;
+    color:#fff;
+    background-size:cover;
+}
+  
+.bg-2 {
+    background: url('img/site_footergradient_compressed.jpg') no-repeat center top fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+.bg-3 {
+    background: url('img/connected.jpg') no-repeat bottom center fixed;
+    color:#fff;
+    background-size:cover;
+}
