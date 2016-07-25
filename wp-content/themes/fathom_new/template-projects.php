@@ -8,11 +8,11 @@ Template Name: Projects
 <?php include('header.php'); ?> 
 
 <div id="fullpage">
-    <div class="section">
+    <div class="section" id="main-projects-pg">
         <div class="container">
           <div class="row" id="project-header">  
               <div class="col-md-6 col-md-offset-3 col-sm-12">
-                <h1 class="text-center">COMMUNITY PROJECTS</h1>
+                <h2 class="text-center">COMMUNITY PROJECTS</h2>
               </div>  <!-- col --> 
           </div> <!-- row -->
           <div class="row"> 

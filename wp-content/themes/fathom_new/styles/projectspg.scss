@@ -1,0 +1,62 @@
+#main-projects-pg {
+    background: black;
+    color: $main-text;
+}
+
+.individual-project {
+    background: black;
+    color: $main-text;
+}
+
+
+// ninja forms 
+
+form input:not([type='submit']) {
+    background: black;            
+    outline: none;
+    border: none;
+    border-bottom:1px solid rgba(38, 200, 200, 1);
+    border-radius: 0px;
+    width:100%;
+}
+
+form label {
+    padding-top: 30px;
+    font-size: $font-1x;
+}
+
+form input:focus {
+    outline: none;
+}
+
+// https://scotch.io/tutorials/google-material-design-input-boxes-in-css3
+.bar  { position:relative; display:block;  }
+
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:rgba(38, 200, 200, 1);
+  transition:0.2s ease all; 
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+.hp-wrap {
+    display:none;
+}
+
+.short-form {
+    margin-top: 50px;
+}

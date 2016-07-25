@@ -35,4 +35,5 @@ wp-content/themes/twentysixteen
 wp-content/plugins/akismet
 wp-content/plugins/hello.php
 wp-content/plugins/index.php
-
+.sass-cache/
+wp-content/plugins/

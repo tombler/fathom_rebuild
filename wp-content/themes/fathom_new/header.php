@@ -9,6 +9,7 @@
     <meta name="author" content="Fathom PBC">
     <title>Fathom Your Reality</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.css">
     <!-- <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/styles/material.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css">
@@ -17,7 +18,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">

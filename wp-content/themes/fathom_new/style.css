@@ -17,6 +17,105 @@ Theme Name: Hellodart
 /**
  * size variables
  */
+* {
+  font-family: 'Lato', sans-serif; }
+
+h1, h2, h3, h4, p {
+  font-family: 'Lato', sans-serif; }
+
+h1 {
+  font-size: 60px; }
+
+h2 {
+  font-size: 38px;
+  font-weight: 300; }
+
+h3, h4 {
+  font-size: 25px; }
+
+p {
+  font-size: 16px; }
+
+.navbar {
+  background: #000;
+  border-bottom: 1px solid white; }
+
+.navbar-nav > li {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.navbar-nav > li > a {
+  color: #FFF;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px; }
+  .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:visited {
+    border-bottom: 2px solid #26c8c8;
+    background: #000; }
+
+a.link {
+  text-decoration: none;
+  color: #636466;
+  font-weight: 700;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px; }
+  a.link:hover, a.link:active, a.link:visited {
+    border-bottom: 2px solid #26c8c8; }
+
+.feature-btn {
+  margin: 20px auto;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 20px;
+  z-index: 1;
+  border: 3px solid #26c8c8;
+  border-radius: 6px; }
+
+.hvr-shutter-out-horizontal {
+  display: block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: transparent;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #26c8c8;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: white; }
+
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
 ul.nav li.dropdown:hover > ul.dropdown-menu {
   display: block; }
 
@@ -39,19 +138,123 @@ nav {
   -o-transition: all 1000ms ease;
   transition: all 1000ms ease; }
 
+footer {
+  border-top: 1px solid #e6e6e6; }
+
 .bg-1 {
-  background: url("img/connected_compressed_crop.jpg") no-repeat fixed;
-  color: #fff;
+  background: url("img/fathom-background.jpg") no-repeat fixed;
   background-size: cover; }
 
-.bg-2 {
-  background: url("img/site_footergradient_compressed.jpg") no-repeat center top fixed;
-  color: #fff;
-  background-size: cover; }
+#section-header {
+  color: #FFF; }
 
-.bg-3 {
-  background: url("img/connected.jpg") no-repeat bottom center fixed;
-  color: #fff;
-  background-size: cover; }
+#section-about, #section-app {
+  color: #636466; }
+
+#section-projects {
+  background: black;
+  color: #FFF; }
+  #section-projects .fp-tableCell {
+    vertical-align: top; }
+
+#projects-header {
+  position: absolute;
+  left: 5%; }
+
+#change-agents {
+  background: url("img/changeagentslargeblack.png") no-repeat;
+  background-size: 100%;
+  height: 400px;
+  z-index: 1; }
+
+#fathom-your-campus {
+  background: url("img/fathom-your-reality-seed-01.svg") no-repeat;
+  background-size: 100%;
+  height: 400px; }
+
+#the-pillars {
+  background: url("img/thepillarslarge.png") no-repeat;
+  background-size: 100%;
+  height: 400px; }
+
+.overlay {
+  width: 100%;
+  height: 350px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 100; }
+
+.proj-link {
+  text-decoration: none;
+  color: #FFF; }
+  .proj-link:hover {
+    text-decoration: none;
+    color: #26c8c8; }
+  .proj-link .project-desc {
+    padding-top: 25%;
+    color: #FFF;
+    text-decoration: none; }
+    .proj-link .project-desc:hover {
+      color: #FFF;
+      text-decoration: none; }
+
+@media (max-width: 992px) {
+  #change-agents, #fathom-your-campus, #the-pillars {
+    display: none; }
+
+  .proj-link:hover, .proj-link:active, .proj-link:visited {
+    text-decoration: underline;
+    color: #26c8c8; } }
+#main-projects-pg {
+  background: black;
+  color: #FFF; }
+
+.individual-project {
+  background: black;
+  color: #FFF; }
+
+form input:not([type='submit']) {
+  background: black;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #26c8c8;
+  border-radius: 0px;
+  width: 100%; }
+
+form label {
+  padding-top: 30px;
+  font-size: 16px; }
+
+form input:focus {
+  outline: none; }
+
+.bar {
+  position: relative;
+  display: block; }
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #26c8c8;
+  transition: 0.2s ease all; }
+
+.bar:before {
+  left: 50%; }
+
+.bar:after {
+  right: 50%; }
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width: 50%; }
+
+.hp-wrap {
+  display: none; }
+
+.short-form {
+  margin-top: 50px; }
 
 /*# sourceMappingURL=style.css.map */

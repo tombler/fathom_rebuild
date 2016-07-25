@@ -1,18 +1,95 @@
 // Parallax backgrounds
 .bg-1 {
-    background: url('img/connected_compressed_crop.jpg') no-repeat fixed;
-    color:#fff;
-    background-size:cover;
-}
-  
-.bg-2 {
-    background: url('img/site_footergradient_compressed.jpg') no-repeat center top fixed;
-    color:#fff;
+    background: url('img/fathom-background.jpg') no-repeat fixed;
+    // color:#fff;
     background-size:cover;
 }
 
-.bg-3 {
-    background: url('img/connected.jpg') no-repeat bottom center fixed;
-    color:#fff;
-    background-size:cover;
+#section-header {
+    color: $main-text;
 }
+
+#section-about, #section-app {
+    color: $alt-text;
+}
+
+#section-projects {
+    background: black;
+    color: $main-text;
+
+    // override fullpageJS styling
+    .fp-tableCell {
+        vertical-align: top;
+    }
+}
+
+#projects-header {
+    position: absolute;
+    left: 5%;
+}
+
+#change-agents {
+    background: url('img/changeagentslargeblack.png') no-repeat;
+    // color:#fff;
+    background-size:100%;
+    height: 400px;
+    z-index: 1;
+}
+
+#fathom-your-campus {
+    background: url('img/fathom-your-reality-seed-01.svg') no-repeat;
+    // color:#fff;
+    background-size:100%;
+    height: 400px;
+}
+
+#the-pillars {
+    background: url('img/thepillarslarge.png') no-repeat;
+    // color:#fff;
+    background-size:100%;
+    height: 400px;
+
+}
+
+.overlay {
+    width: 100%;
+    height: 350px;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    z-index: 100;
+}
+
+.proj-link {
+    text-decoration: none;
+    color: $main-text;
+
+    &:hover {
+        text-decoration: none;
+        color: $fathom-green;
+    }
+
+    .project-desc {
+        padding-top: 25%;
+        color: $main-text;
+        text-decoration: none;
+
+        &:hover {
+            color:$main-text;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: $screen-md-min) {
+    #change-agents,#fathom-your-campus,#the-pillars  {
+        display:none;
+    }
+
+    .proj-link:hover, .proj-link:active, .proj-link:visited {
+        text-decoration: underline;
+        color: $fathom-green;
+    }
+}
+
+
+

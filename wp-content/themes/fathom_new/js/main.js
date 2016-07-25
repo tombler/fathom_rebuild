@@ -50,22 +50,23 @@
 
 
 $(document).ready(function() {
-  $('#fullpage').fullpage({
-    //Scrolling
-    css3: true,
-    // scrollingSpeed: 700,
-    autoScrolling: false,
-    fitToSection: false,
+  // $('#fullpage').fullpage({
+  //   //Scrolling
+  //   css3: true,
+  //   // scrollingSpeed: 700,
+  //   autoScrolling: false,
+  //   fitToSection: false,
 
-    //Design
-    paddingTop: '3em',
-    paddingBottom: '10px',
-    responsiveWidth: 0,
-    responsiveHeight: 0,
-  });
+  //   //Design
+  //   paddingTop: '3em',
+  //   paddingBottom: '10px',
+  //   responsiveWidth: 0,
+  //   responsiveHeight: 0,
+  // });
 
 
 
+  // navbar fade in
   if (window.location.pathname == '/')
   {
     //jQuery to collapse the navbar on scroll
@@ -88,18 +89,30 @@ $(document).ready(function() {
 
   // smooth scroll
   // https://css-tricks.com/snippets/jquery/smooth-scrolling/
-  // $('a[href*="#"]:not([href="#"])').click(function() {
-  //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-  //     var target = $(this.hash);
-  //     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-  //     if (target.length) {
-  //       $('html, body').animate({
-  //         scrollTop: target.offset().top
-  //       }, 1000);
-  //       return false;
-  //     }
-  //   }
-  // });
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length && target.selector.indexOf("carousel") < 0 ) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
+  // project hovers
+  $('.proj-link').hover(
+    function () {
+      $('.project-desc', this).show();
+      $('.overlay', this).show();
+    },
+    function () {
+      $('.project-desc', this).hide();
+      $('.overlay', this).hide();
+    }
+  );
 
   // $('.bg-1,.bg-3').css('background-position', 'center');
 
@@ -110,6 +123,24 @@ $(document).ready(function() {
   $('.bg-2').parallax({
     speed : 0.25
   });
+
+  $('#fullpage').fullpage({
+      //Scrolling
+      css3: true,
+      // scrollingSpeed: 700,
+      autoScrolling: false,
+      fitToSection: false,
+
+      //Design
+      paddingTop: '3em',
+      paddingBottom: '10px'
+      // scrollOverflow: true
+      // responsiveWidth: 1000,
+      // responsiveHeight: 0
+    });
+
+  // insert element after each input to create material-design-like form inputs
+  $('input').after('<span class="bar"></span>');
 
 });
 
