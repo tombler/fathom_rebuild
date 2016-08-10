@@ -121,7 +121,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 @media (max-width: 767px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: none; } }
+    display: none; }
+
+  .navbar-toggle .icon-bar {
+    background: white; }
+    .navbar-toggle .icon-bar:visited {
+      background: white; } }
 nav {
   background-color: black;
   opacity: 0;
@@ -129,6 +134,22 @@ nav {
   -moz-transition: all 1000ms ease;
   -o-transition: all 1000ms ease;
   transition: all 1000ms ease; }
+  nav .dropdown-menu {
+    background: black;
+    color: #FFF;
+    padding: 10px; }
+    nav .dropdown-menu li {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    nav .dropdown-menu li a {
+      color: #FFF;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px; }
+      nav .dropdown-menu li a:hover, nav .dropdown-menu li a:active, nav .dropdown-menu li a:visited {
+        border-bottom: 2px solid #26c8c8;
+        background: #000;
+        color: #FFF; }
 
 .fadeIn {
   opacity: 1;
@@ -146,6 +167,10 @@ footer {
   background-size: cover; }
 
 #section-header {
+  color: #FFF; }
+
+#section-creatives {
+  background-color: black;
   color: #FFF; }
 
 #section-about, #section-app {
@@ -208,18 +233,24 @@ footer {
 #main-projects-pg {
   background: black;
   color: #FFF; }
+  #main-projects-pg .btn {
+    margin-left: 15%;
+    margin-right: 15%; }
 
 .individual-project {
   background: black;
   color: #FFF; }
 
-form input:not([type='submit']) {
+form input:not([type='submit']), form select {
   background: black;
   outline: none;
   border: none;
   border-bottom: 1px solid #26c8c8;
   border-radius: 0px;
   width: 100%; }
+
+form select {
+  border: 1px solid #26c8c8; }
 
 form label {
   padding-top: 30px;
@@ -256,5 +287,8 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 
 .short-form {
   margin-top: 50px; }
+
+.ninja-forms-required-items {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

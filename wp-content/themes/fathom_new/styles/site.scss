@@ -126,6 +126,14 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: none;
   }
+
+  .navbar-toggle .icon-bar {
+    background: white;
+
+    &:visited {
+      background: white;      
+    }
+  }
 }
 
 
@@ -136,6 +144,30 @@ nav {
     -moz-transition: all 1000ms ease;
     -o-transition:  all 1000ms ease;
     transition: all 1000ms ease;
+
+    .dropdown-menu {
+      background: black;
+      color: $main-text;
+      padding: 10px;
+
+      li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      li a {
+        color: $main-text;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        &:hover, &:active, &:visited {
+          border-bottom: 2px solid $fathom-green;
+          background: #000;
+          color: $main-text;
+        }
+      }
+    }
 }
 
 .fadeIn {

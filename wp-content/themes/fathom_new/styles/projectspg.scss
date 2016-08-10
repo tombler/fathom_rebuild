@@ -1,6 +1,11 @@
 #main-projects-pg {
     background: black;
     color: $main-text;
+
+    .btn {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
 }
 
 .individual-project {
@@ -11,13 +16,17 @@
 
 // ninja forms 
 
-form input:not([type='submit']) {
+form input:not([type='submit']), form select {
     background: black;            
     outline: none;
     border: none;
     border-bottom:1px solid rgba(38, 200, 200, 1);
     border-radius: 0px;
     width:100%;
+}
+
+form select {
+    border:1px solid rgba(38, 200, 200, 1);
 }
 
 form label {
@@ -59,4 +68,8 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 
 .short-form {
     margin-top: 50px;
+}
+
+.ninja-forms-required-items {
+    text-align: center;
 }
